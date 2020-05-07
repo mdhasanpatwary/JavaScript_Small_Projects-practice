@@ -1,0 +1,10 @@
+body {
+    background-color: yellowgreen;
+}
+
+.wrapper {
+    max-width: 980px;
+    padding: 40px;
+    box-shadow: 0 0 10px #ddd;
+    margin: 50px auto;
+}

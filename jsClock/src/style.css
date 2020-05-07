@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+.container{
+    width:960px;
+    margin:0 auto;
+}
+
+.title{
+    text-align: center;
+    color:#6e2142;
+    font-size: 60px;
+}
+
+.digital-clock-wrap{
+    margin: 50px 0px;
+}
+
+.digital-clock{
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+    color: #45454d;
+    text-align: center;
+}
+
+.analog-clock {
+    width: 400px;
+    height: 400px;
+    background: #e7dcf1;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.analog-clock:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 51%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #e7dcf1;
+    border: 2px solid #000;
+}
+
+.second,
+.minutes,
+.hour {
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    border-radius: 5px;
+}
+
+.second {
+    width: 100px;
+    background: #41aaa8;
+    left: 100px;
+}
+
+.minutes {
+    width: 90px;
+    background: #ff6363;
+    left: 110px;
+
+}
+
+.hour {
+    width: 70px;
+    background: #341677;
+    left: 130px;
+}
+
+img {
+    width: 400px;
+}

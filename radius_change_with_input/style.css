@@ -1,0 +1,27 @@
+body {
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffaeae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .hpnumput {
+    height: 20px;
+    width: 50px;
+    margin-right: 4px;
+    text-align: center;
+  }
+  .hpcheckbox {
+    height: 25px;
+    width: 50px;
+  }

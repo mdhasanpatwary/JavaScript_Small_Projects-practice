@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        color: white;
+    }
+    .card {
+        background: radial-gradient(circle at var(--x) var(--y), #5de7ff 0%, #0092ec 100%);
+        border-radius: 15px;
+        padding: 1em 2em;
+        width: 40%;
+    }
+    h1 p {
+        pointer-events: none;
+    }
+</style>
+<body>
+    <div class="card" style="--x: 0; --y: 0;">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In magnam iste dolorem nostrum ducimus rerum itaque minima! Obcaecati dolores tenetur aliquid consectetur sapiente minima odit.</p>
+    </div>
+    <script>
+        let body = document.querySelector('body');
+        body.onmousemove = e => {
+            const x = e.pageX - e.target.offsetLeft;
+            const y = e.pageY - e.target.offsetTop;
+
+            e.target.style.setProperty('--x', `${x}px`);
+            e.target.style.setProperty('--y', `${y}px`);
+            
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+At first run command "npm install" & at last "npm start"
