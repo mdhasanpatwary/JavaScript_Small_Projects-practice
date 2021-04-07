@@ -1,4 +1,4 @@
-# JavaScript Some Small Projects
+# Live Links
 
 
 01 - JavaScript Drum Kit - https://practical-projects.netlify.app/01%20-%20javascript%20drum%20kit/ <br/>
